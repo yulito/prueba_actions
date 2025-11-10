@@ -1,0 +1,46 @@
+# ejemplo para aprender github actions
+a = 3
+b = 8
+
+def suma(a,b):
+    return a + b
+
+def resta(a,b):
+    return a - b
+
+def multiplicacion(a,b):
+    return a * b
+
+def division(a,c):
+    return a / b
+
+def menu():
+    print("****************")
+    print("----- Menu -----")
+    print("1) suma")
+    print("2) resta")
+    print("3) multiplicacion")
+    print("4) division")
+    print("5) SALIR")
+    print("****************")
+    op = int(input(">"))
+    return op
+
+def inicio():        
+    while True:
+        op = menu()
+        if op == "1":
+            print(suma(a,b))
+        elif op == "2":
+            print(resta(a,b))
+        elif op == 3:
+            print(multiplicacion(a,b))
+        elif op == "4":
+            print(division(a,b))
+        elif op == "5":
+            break
+        else:
+            print("")
+            print("+++ ERROR +++\n")
+
+inicio()
