@@ -26,16 +26,16 @@ def menu():
 
     op = input(">")
     return op
-
+"""
 def inicio():        
     while True:
         op = menu()
         if op == "1":
             print(str(suma(a,b)))
         elif op == "2":
-            print(resta(a,b))
+            print(str(resta(a,b)))
         elif op == "3":
-            print(multiplicacion(a,b))
+            print(str(multiplicacion(a,b)))
         elif op == "4":
             print(str(division(a,b)))
         elif op == "5":
@@ -45,3 +45,8 @@ def inicio():
             print("+++ ERROR +++\n")
 
 inicio()
+"""
+print(suma(a,b))
+print(resta(a,b))
+print(multiplicacion(a,b))
+print(division(a,b))
