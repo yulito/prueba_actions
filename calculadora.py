@@ -23,8 +23,9 @@ def menu():
     print("4) division")
     print("5) SALIR")
     print("****************")
-    option = input(">")
-    return option
+
+    op = input(">")
+    return op
 
 def inicio():        
     while True:
@@ -32,9 +33,9 @@ def inicio():
         if op == "1":
             print(str(suma(a,b)))
         elif op == "2":
-            print(str(resta(a,b)))
-        elif op == 3:
-            print(str(multiplicacion(a,b)))
+            print(resta(a,b))
+        elif op == "3":
+            print(multiplicacion(a,b))
         elif op == "4":
             print(str(division(a,b)))
         elif op == "5":
