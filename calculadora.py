@@ -11,7 +11,7 @@ def resta(a,b):
 def multiplicacion(a,b):
     return a * b
 
-def division(a,c):
+def division(a,b):
     return a / b
 
 def menu():
@@ -23,20 +23,20 @@ def menu():
     print("4) division")
     print("5) SALIR")
     print("****************")
-    op = int(input(">"))
-    return op
+    option = input(">")
+    return option
 
 def inicio():        
     while True:
         op = menu()
         if op == "1":
-            print(suma(a,b))
+            print(str(suma(a,b)))
         elif op == "2":
-            print(resta(a,b))
+            print(str(resta(a,b)))
         elif op == 3:
-            print(multiplicacion(a,b))
+            print(str(multiplicacion(a,b)))
         elif op == "4":
-            print(division(a,b))
+            print(str(division(a,b)))
         elif op == "5":
             break
         else:
